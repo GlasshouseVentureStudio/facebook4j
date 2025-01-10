@@ -126,6 +126,7 @@ public class PhotoUpdate implements java.io.Serializable {
         if (privacy != null) {
             params.add(new HttpParameter("privacy", privacy.asJSONString()));
         }
+        params.add(new HttpParameter("published", true));
         return params.toArray(new HttpParameter[params.size()]);
     }
 
